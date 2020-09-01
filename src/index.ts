@@ -1,4 +1,8 @@
-import {sumNumber} from "./sum"
+import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter"
+import { WebApp } from "./WebApp";
 
-console.log(" A soma dos numeros é:" + sumNumber(2,5,2))
-console.log("Edit")
+document.addEventListener("DOMContentLoaded", () => {
+    // Startup
+    document.body.append(new WebApp)
+})
+
